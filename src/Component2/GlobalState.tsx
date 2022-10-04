@@ -20,6 +20,9 @@ export const GlobalUser: React.FC<PropsWithChildren> = ({children}) =>
     const [data, setData] = React.useState<User[]>([
        
     ])
+     React.useEffect(() => {
+    localStorage.setItem("userContext", JSON.stringify(data));
+  }, [data]);
     
     return (
         <userContext.Provider value={{data, setData}}>
