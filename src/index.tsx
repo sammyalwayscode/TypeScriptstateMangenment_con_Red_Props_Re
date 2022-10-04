@@ -4,15 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { GlobalUser } from './Component2/GlobalState';
+import { Provider } from "react-redux"
+import {store} from "./component3/store"
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <GlobalUser>
-      <App />
-    </GlobalUser>
+    <Provider store={store}>
+      <GlobalUser>
+           <App />
+      </GlobalUser>        
+        </Provider> 
   </React.StrictMode>
 );
 

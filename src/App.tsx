@@ -4,6 +4,7 @@ import './App.css';
 import Comp1 from './component/Comp1';
 import InputScree from './Component2/InputScree';
 import DispalyScreen from './Component2/DispalyScreen';
+import InputScreen from './component3/InputScreen';
 
 
 function App() {
@@ -14,7 +15,20 @@ function App() {
       <br/>
       <br/>
       <br />
-      <DispalyScreen/>
+      <DispalyScreen />
+      
+      <br/>
+      <br/>
+      <br />
+      <div>Redux</div>
+      <InputScreen />
+      <br/>
+      <br/>
+      <br />
+      <DispalyScreen />
+
+      
+
 
     </div>
   );

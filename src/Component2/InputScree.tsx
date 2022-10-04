@@ -17,6 +17,7 @@ function InputScree()
                 stack: stack
             }
         ])
+        
     }
   return (
       <div>
